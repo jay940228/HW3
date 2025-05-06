@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>建立您的帳戶</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!-- 頁首區域 -->
+<div class="header">
+    <!-- 導覽列容器 -->
+    <div class="navbar-center">
+        <!-- LOGO 區域 -->
+        <div class="navbar-logo">
+            <img src="img/logo_steam.png" alt="logo_steam" style="height: 40px;">
+        </div>
+        <!-- 導覽連結區域 -->
+        <div class="navbar-links">
+            <a href="#">商店</a>
+            <a href="#">社群</a>
+            <a href="#">關於</a>
+            <a href="#">客服中心</a>
+        </div>
+    </div>
+</div>
+
+<!-- 帳戶建立表單 -->
+<div class="join_form no-background">
+
+    <!-- 表單標題 -->
+    <a class="join_form_title">
+        建立您的帳戶
+    </a>
+
+    <!-- 電子信箱輸入欄位 -->
+    <div class="form_row row_flex">
+        <div class="form_area">
+            <label for="email">電子信箱</label>
+            <input type="text" maxlength="255" name="email" id="email">
+        </div>
+    </div>
+
+    <!-- 確認電子信箱輸入欄位 -->
+    <div class="form_row row_flex">
+        <div class="form_area">
+            <label class="reenter_row" for="reenter_email">確認您的電子郵件地址</label>
+            <input type="text" maxlength="255" name="reenter_email" id="reenter_email">
+        </div>
+    </div>
+
+    <!-- 居住地選擇欄位 -->
+    <div class="form_row row_flex">
+        <div class="form_area">
+            <div style="">
+                <label class="country_select" for="country">居住地</label>
+                <select name="country" id="country" class="blueish" onchange="OnCountryChange">
+                    <option value="TW">台灣</option>
+                    <option value="CN">中國大陸</option>
+                    <option value="IN">印度</option>
+                    <option value="JP">日本</option>
+                </select>
+            </div>
+        </div>
+        <div style="clear: left;"></div>
+    </div>
+
+    <!-- 提交按鈕 -->
+    <div class="form_row">
+        <div id="ssa_box">
+            <input type="hidden" name="action" value="submit_agreement">
+            <div id="priv_and_sub">
+                <button type="submit" id="createAccountButton" class="joinsteam_button btn_blue_steamui btn_medium">
+                    <span>繼續</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

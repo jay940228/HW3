@@ -1,0 +1,141 @@
+/* 背景與整體樣式 */
+body {
+    margin: 0;
+    font-family: "Motiva Sans", "Microsoft JhengHei", sans-serif;
+    font-size: 12px;
+    color: #E9E9E9;
+    background-color: #1B2838;
+    background-image: url('img/background.png'); /* 設置背景圖片 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* 設置頁首的樣式，包括背景色和固定位置 */
+.header {
+    display: flex;
+    justify-content: center; /* 修改為居中 */
+    align-items: center;
+    background-color: #171D25;
+    padding: 27px 40px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+/* 導覽列的容器，包含 LOGO 和連結 */
+.navbar-center {
+    display: flex;
+    flex-direction: row; /* 修改為水平排列 */
+    align-items: center;
+    gap: 20px; /* LOGO 和導航連結之間的間距 */
+    margin-left: -30%;
+}
+
+/* LOGO 圖片樣式 */
+.navbar-logo img {
+    height: 40px;
+}
+
+/* 導覽連結的容器樣式 */
+.navbar-links {
+    display: flex;
+    gap: 20px;
+}
+
+/* 導覽連結的文字樣式 */
+.navbar-links a {
+    color: #DCDEDF;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.navbar-links a:hover {
+    color: white;
+}
+
+/* 中央容器，用來置中表單 */
+.main-container {
+    max-width: 700px;
+    margin: auto;
+}
+
+/* 表單樣式 */
+.join_form {
+    margin-top: 160px;
+    margin-left: -30%;
+}
+
+/* 表單標題樣式 */
+.join_form_title {
+    font-size: 40px;
+    margin-bottom: 10px; /* 原為 20px，減少底部間距 */
+    color: #E9E9E9;
+    text-align: center;
+}
+
+/* 無背景樣式的表單 */
+.join_form.no-background {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+/* 區段標題樣式 */
+.section_title {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #66C0F4;
+    text-align: left;
+    z-index: 10;
+    position: relative;
+}
+
+
+.form_row {
+    margin-bottom: 40px; /* 原為 20px，增加間距 */
+}
+
+/* 表單標籤樣式 */
+label {
+    display: block;
+    color: #b8b6b4;
+    font-size: 16px;
+    margin-bottom: 6px;
+    width: 100%; /* 統一寬度 */
+    text-align: left; /* 確保文字左對齊 */
+}
+
+/* 表單輸入框和下拉選單的樣式 */
+input, select {
+    width: 140%; /* 確保所有輸入欄位和下拉選單寬度一致 */
+    padding: 8px;
+    background-color: #32353C;
+    color: white;
+    border: 1px solid #3D4450;
+    border-radius: 3px;
+    font-size: 14px;
+    box-sizing: border-box; /* 確保內邊距和邊框不影響寬度 */
+}
+
+/* 按鈕樣式 */
+.joinsteam_button {
+    background: linear-gradient(to right, #4b9afc, #2b75e4);
+    border: none;
+    padding: 8px;
+    width: 60%;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.joinsteam_button:hover {
+    background: #1a5ac7;
+}
+
+
